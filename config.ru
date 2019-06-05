@@ -4,7 +4,7 @@ map '/health' do
   health = proc do |env|
     [200, { "Content-Type" => "text/html" }, ["1"]]
   end 
-  run health
+  run health 
 end
 
 map '/lobster' do
